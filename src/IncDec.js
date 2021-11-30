@@ -8,7 +8,11 @@ const IncDec = () => {
         setCount(count+1)
     }
     const dec=()=>{
-        setCount(count-1)
+        if(count===0){
+        alert("You can't decrease now")
+        }else if(count>0){
+            setCount(count-1)
+        }
     }
 
     return (
