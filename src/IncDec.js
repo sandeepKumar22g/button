@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./IncDec.css"
+import { AddIcon, RemoveIcon } from '@mui/icons-material';
+
 const IncDec = () => {
 
 
@@ -20,8 +22,8 @@ const IncDec = () => {
             <div className='main'>
                 <div className='center'>
                     <h1>{count}</h1>
-                    <button onClick={inc}>Inc</button>
-                    <button onClick={dec}>Dec</button>
+                    <button onClick={inc}> <AddIcon/> </button>
+                    <button onClick={dec}> <RemoveIcon/> </button>
                 </div>
 
             </div>
